@@ -8,46 +8,36 @@
       font-size: extra-large;
       color: #00ffff;
     }
-    
-    .container div {
-      padding: 1%;      
-      box-sizing: border-box;
-            min-height: 1500px;
-    }
-    
-    .left-col, .right-col {
-      background-color: #00ffff;
-      width: 10%;
-      float:left;
-    }
-    
-    .center-col {
-      background-color:#323232;
-      width: 80%;
-      float: left;
-    }
+
+#container {
+  padding-left: 200px;   /* LC width */
+  padding-right: 150px;  /* RC width */
+}
+#container .column {
+  position: relative;
+  float: left;
+}
+#center {
+  width: 100%;
+}
+#left {
+  width: 200px;          /* LC width */
+  right: 200px;          /* LC width */
+  margin-left: -100%;
+}
         
   </style>
 </head>
   
 <body>
- 
-  <div class = "container">
-      
-      <div class = "left-col">
-      </div>
-  
-      <div class = "center-col">
-  
-  
-  
-      </div>
- 
+     
+    
+<div id="container">
+  <div id="center" class="column"></div>
+  <div id="left" class="column"></div>
+  <div id="right" class="column"></div>
 
-      <div class = "right-col">
-      </div>
-
-  </div>
+</div>
   
 </body>
 </html>
