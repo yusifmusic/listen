@@ -9,21 +9,19 @@
       color: #00ffff;
     }
     
-
+    .container div {
+      padding: 1%;      
+      box-sizing: border-box;
+            min-height: 100%;
+    }
     
-    .leftMargin {
-      background-color: red;
+    .left-col, .right-col {
+      background-color: #00ffff;
       width: 25%;
       float:left;
     }
-
-    .rightMargin {
-      background-color: red;
-      width: 25%;
-      float:left;
-    }
-
-    .content {
+    
+    .center-col {
       background-color:#323232;
       width: 50%;
       float: left;
@@ -33,20 +31,23 @@
 </head>
   
 <body>
+ 
+  <div class = "container">
       
-      <div id = "leftMargin">
+      <div class = "left-col">
       </div>
   
-      <div id = "content">
+      <div class = "center-col">
   
   
   
       </div>
  
 
-      <div id = "rightMargin">
+      <div class = "right-col">
       </div>
 
+  </div>
   
 </body>
 </html>
