@@ -1,33 +1,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-
+ 
 <title> Yusif</title>
-
+ 
 	<style>
     		body {
-     		 background-color: #00ffff;
+     		background-color: #00ffff;
       		font-family: "Arial Black", Gadget, sans-serif;
-     		 font-size: extra-large;
+     		font-size: extra-large;
   		    color: #00ffff;
   		  }
     
-	.wrapper > div {
-		background: red;
-		padding: 1em;
-		}
+ 	.column {
+		float: left;
+	}
+	
+	.left, .right {
+	width: 25%;
+	}
 
+	.middle {
+	width: 50%;
+	}
+	
+	.bottom1 {
+	width: 25%;
+	}
+
+	.bottom2{
+	width: 25%;
+	}
     
 	</style>
-
+ 
 </head>
   
 <body>
- 
-	<div class = “wrapper”>    
 
-	</div>
+<div class = “row”> 
+	<div class = “column left style = “background-color:red;””></div>
+	<div class = “column middle style = “background-color:blue;””></div>
+	<div class = “column right style = “background-color:green;””></div>
+</div>
+ <div class = “row”> 
+	<div class = “column left style = “background-color:green;””></div>
+	<div class = “column bottom1 style = “background-color:yellow;””></div>
+	<div class = “column bottom2 style = “background-color:black;””></div>
+	<div class = “column right style = “background-color:green;””></div>/div>
 
-    
 </body>
 </html>
