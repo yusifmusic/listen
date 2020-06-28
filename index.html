@@ -25,7 +25,7 @@
 
 
 
-.topRight {
+.topLeft {
   width: 5%;
 }
 
@@ -33,13 +33,13 @@
   width: 90%;
 }
 
-.topLeft {
+.topRight {
   width: 5%;
 }
 
 
 	
-.botRight {
+.botLeft {
   width: 5%;
 }
 
@@ -59,9 +59,35 @@
   width: 10%;
 }
 
-.botLeft {
+.botRight {
   width: 5%;
 }
+
+
+
+.footerLeft {
+  width: 5%;
+}	
+
+.footerMid1 {
+  width:10%;
+}	
+	
+.footerMid2 {
+  width:40%;
+}
+	
+.footerMid3 {
+  width:30%;
+}
+	
+.footerMid4 {
+  width:10%;
+}
+
+.footerRight {
+  width: 5%;
+}	
 
 
 .row1:after {
@@ -70,6 +96,11 @@
 }
 
 .row2:after {
+  content: "";
+  clear: both;
+}
+
+.row3:after {
   content: "";
   clear: both;
 }
@@ -83,7 +114,7 @@
 
 <div class="col-container">
   
-  <div class="col topRight" style="background:#00ffff">
+  <div class="col topLeft" style="background:#00ffff">
   
   </div>
 
@@ -99,7 +130,7 @@
 	</center>
   </div>
 
-  <div class="col topLeft" style="background:#00ffff">
+  <div class="col topRight" style="background:#00ffff">
   
   </div>
 
@@ -111,7 +142,7 @@
 	
 <div class="col-container">
   
-  <div class="col botRight" style="background:#00ffff">
+  <div class="col botLeft" style="background:#00ffff">
   
   </div>
 
@@ -132,10 +163,42 @@
     	
   </div>
 
-  <div class="col botLeft" style="background:#00ffff">
+  <div class="col botRight" style="background:#00ffff">
   
   </div>
 
+</div>
+</div>
+
+
+<div class = "row3">
+	
+<div class="col-container">
+
+<div class="col footerLeft" style="background:black">
+  
+  </div>
+
+  <div class="col footerMid1" style="background:red">
+  	
+  </div>
+
+  <div class="col footerMid2" style="background:green">
+	
+  </div>
+			 
+  <div class="col footerMid3" style="background:blue">
+  	
+  </div>
+
+  <div class="col footerMid4" style="background:yellow">
+    	
+  </div>
+
+  <div class="col footerRight" style="background:orange">
+  
+  </div>
+	
 </div>
 </div>
 
