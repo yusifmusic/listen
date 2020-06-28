@@ -22,7 +22,6 @@
 .column {
   float: left;
   padding: 10px;
-  display: table-cell;
 }
 
 .left, .right {
@@ -42,10 +41,7 @@
 
 
 	
-.column-container {
-  display: table;
-  width: 100%;
-}	
+	
 	
 .row2:after {
   content: "";
@@ -65,6 +61,16 @@
   width: 45%;
 }
 
+	
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+	
 </style>
 </head>
 <body>
@@ -94,24 +100,28 @@
 
 <div class="row2">
 
-<div class="col-container"> 
-  
-  <div class="column left2" style="background-color:#00ffff;"> </div>
-
-	
-  <div class="column middle2" style="background-color:#323232;">
-	  <left><img src = "https://raw.githubusercontent.com/yusifmusic/listen/master/smartlink-spotify-dark-logo.png" 
-		     width = "40%" height = "40%"></img></left>
+<div class="col-container">
+  <div class="col" style="background:orange">
+    <h2>Column 1</h2>
+    <p>Hello World</p>
   </div>
-  
-  <div class="column middle3" style="background-color:#323232;"> 
-	  <right>LISTEN BUTTON</right>
-	</div>
 
+  <div class="col" style="background:yellow">
+    <h2>Column 2</h2>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+  </div>
+
+  <div class="col" style="background:orange">
+    <h2>Column 3</h2>
+    <p>Some other text..</p>
+    <p>Some other text..</p>
+  </div>
+</div>
 	
-  <div class="column right2" style="background-color:#00ffff;"> </div>
-
-</div></div>
+</div>
 	
 
 </body>
