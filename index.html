@@ -1,58 +1,55 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
- 
-<title> Yusif</title>
- 
-	<style>
-    		body {
-     		background-color: #00ffff;
-      		font-family: "Arial Black", Gadget, sans-serif;
-     		font-size: extra-large;
-  		    color: #00ffff;
-  		  }
-    
- 	.column {
-		float: left;
-	}
+	<title> Yusif</title>
 	
-	.left, .right {
-	width: 25%;
-	}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-	.middle {
-	width: 50%;
-	}
-	
-	.bottom1 {
-	width: 25%;
-	}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 
-	.bottom2{
-	width: 25%;
-	}
+.left, .right {
+  width: 25%;
+}
 
-	.row:after {
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
   content: "";
   display: table;
   clear: both;
-	}
-	</style>
-
+}
+</style>
 </head>
-  
 <body>
 
-<div class = “row”> 
-	<div class = “column left style = “background-color:red;””></div>
-	<div class = “column middle style = “background-color:blue;””></div>
-	<div class = “column right style = “background-color:green;””></div>
+<h2>Three Unequal Columns</h2>
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column middle" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column right" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
 </div>
- <div class = “row”> 
-	<div class = “column left style = “background-color:green;””></div>
-	<div class = “column bottom1 style = “background-color:yellow;””></div>
-	<div class = “column bottom2 style = “background-color:black;””></div>
-	<div class = “column right style = “background-color:green;””></div>/div>
 
 </body>
 </html>
