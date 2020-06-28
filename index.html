@@ -23,7 +23,22 @@
   display: table-cell;
 }
 
-	
+
+
+.topRight {
+  width: 5%;
+}
+
+.topMid {
+  width: 90%;
+}
+
+.topLeft {
+  width: 5%;
+}
+
+
+
 
 .botRight {
   width: 5%;
@@ -50,11 +65,43 @@
 }
 
 
+.row1:after {
+  content: "";
+  clear: both;
+}
+
+.row2:after {
+  content: "";
+  clear: both;
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="row1">
+
+<div class="col-container">
+  
+  <div class="col topRight" style="background:orange">
+  1
+  </div>
+
+  <div class="col topMid" style="background:yellow">
+  2 
+  </div>
+
+  <div class="col topLeft" style="background:orange">
+  3
+  </div>
+
+</div>
+</div>
+
+
+<div class="row2">
+	
 <div class="col-container">
   
   <div class="col botRight" style="background:orange">
@@ -82,7 +129,8 @@
   </div>
 
 </div>
-	
+</div>
+
 	
 </body>
 </html>
